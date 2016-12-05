@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec  4 18:54:55 2016
+Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : demo
+Top-level Entity Name : demo
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 7,190 / 114,480 ( 6 % )
+    Total combinational functions : 6,636 / 114,480 ( 6 % )
+    Dedicated logic registers : 4,110 / 114,480 ( 4 % )
+Total registers : 4324
+Total pins : 218 / 529 ( 41 % )
+Total virtual pins : 0
+Total memory bits : 644,096 / 3,981,312 ( 16 % )
+Embedded Multiplier 9-bit elements : 4 / 532 ( < 1 % )
+Total PLLs : 1 / 4 ( 25 % )

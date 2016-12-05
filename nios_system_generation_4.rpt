@@ -1,0 +1,207 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/ecegrid/a/695r07/ece695r/project/ --output-directory=/home/ecegrid/a/695r07/ece695r/project/nios_system/ --report-file=bsf:/home/ecegrid/a/695r07/ece695r/project/nios_system.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=/home/ecegrid/a/695r07/ece695r/project/nios_system.qsys
+Progress: Loading project/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding video_pixel_buffer_dma_0 [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module video_pixel_buffer_dma_0
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Adding video_dual_clock_buffer_0 [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module video_dual_clock_buffer_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Adding vga_clk [clock_source 13.0]
+Progress: Parameterizing module vga_clk
+Progress: Adding generic_tristate_controller_0 [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module generic_tristate_controller_0
+Progress: Adding tristate_conduit_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_conduit_bridge_0
+Progress: Adding performance_counter_0 [altera_avalon_performance_counter 13.0.1.99.2]
+Progress: Parameterizing module performance_counter_0
+Progress: Adding rleds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module rleds
+Progress: Adding gleds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gleds
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding timer_0 [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_0
+Progress: Adding ycc_rgb_convert_0 [ycc_rgb_convert 1.0]
+Progress: Parameterizing module ycc_rgb_convert_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios_system.nios2_qsys_0: The address range of the slaves connected to the Nios II instruction masters exceeds 28 bits. Attempts to call functions across 28-bit boundaries is not supported by GCC and will result in linker errors.
+Info: nios_system.video_rgb_resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: nios_system.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Warning: nios_system.generic_tristate_controller_0: Properties (isFlash,isMemoryDevice,isNonVolatileStorage) have been set on interface uas - in composed mode these are ignored
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/ecegrid/a/695r07/ece695r/project/ --output-directory=/home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:/home/ecegrid/a/695r07/ece695r/project/nios_system.sopcinfo --report-file=html:/home/ecegrid/a/695r07/ece695r/project/nios_system.html --report-file=qip:/home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/nios_system.qip --report-file=cmp:/home/ecegrid/a/695r07/ece695r/project/nios_system.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=/home/ecegrid/a/695r07/ece695r/project/nios_system.qsys --language=VERILOG
+Progress: Loading project/nios_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding video_pixel_buffer_dma_0 [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module video_pixel_buffer_dma_0
+Progress: Adding video_rgb_resampler_0 [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module video_rgb_resampler_0
+Progress: Adding video_dual_clock_buffer_0 [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module video_dual_clock_buffer_0
+Progress: Adding video_vga_controller_0 [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module video_vga_controller_0
+Progress: Adding vga_clk [clock_source 13.0]
+Progress: Parameterizing module vga_clk
+Progress: Adding generic_tristate_controller_0 [altera_generic_tristate_controller 13.0]
+Progress: Parameterizing module generic_tristate_controller_0
+Progress: Adding tristate_conduit_bridge_0 [altera_tristate_conduit_bridge 13.0]
+Progress: Parameterizing module tristate_conduit_bridge_0
+Progress: Adding performance_counter_0 [altera_avalon_performance_counter 13.0.1.99.2]
+Progress: Parameterizing module performance_counter_0
+Progress: Adding rleds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module rleds
+Progress: Adding gleds [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module gleds
+Progress: Adding switches [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module switches
+Progress: Adding timer_0 [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_0
+Progress: Adding ycc_rgb_convert_0 [ycc_rgb_convert 1.0]
+Progress: Parameterizing module ycc_rgb_convert_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios_system.nios2_qsys_0: The address range of the slaves connected to the Nios II instruction masters exceeds 28 bits. Attempts to call functions across 28-bit boundaries is not supported by GCC and will result in linker errors.
+Info: nios_system.video_rgb_resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: nios_system.video_vga_controller_0: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Warning: nios_system.generic_tristate_controller_0: Properties (isFlash,isMemoryDevice,isNonVolatileStorage) have been set on interface uas - in composed mode these are ignored
+Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 17 modules, 73 connections
+Info: merlin_custom_instruction_transform: After transform: 20 modules, 76 connections
+Info: merlin_translator_transform: After transform: 33 modules, 133 connections
+Info: merlin_domain_transform: After transform: 58 modules, 313 connections
+Info: merlin_router_transform: After transform: 71 modules, 370 connections
+Info: merlin_burst_transform: After transform: 72 modules, 375 connections
+Info: reset_adaptation_transform: After transform: 75 modules, 275 connections
+Info: merlin_network_to_switch_transform: After transform: 100 modules, 329 connections
+Info: merlin_width_transform: After transform: 104 modules, 341 connections
+Info: merlin_mm_transform: After transform: 104 modules, 341 connections
+Info: merlin_interrupt_mapper_transform: After transform: 105 modules, 344 connections
+Warning: nios_system: "No matching role found for nios2_qsys_0:custom_instruction_master:E_ci_multi_clock (clk)"
+Warning: nios_system: "No matching role found for nios2_qsys_0:custom_instruction_master:E_ci_multi_reset (reset)"
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_system_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_system_nios2_qsys_0 --dir=/tmp/alt7129_8938964436305286123.dir/0002_nios2_qsys_0_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0002_nios2_qsys_0_gen//nios_system_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2016.11.24 14:08:16 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2016.11.24 14:08:16 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   Couldn't query license setup in Quartus directory /package/eda/altera/altera13.0sp1/quartus
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2016.11.24 14:08:17 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2016.11.24 14:08:18 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2016.11.24 14:08:18 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2016.11.24 14:08:20 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_system_nios2_qsys_0'
+Info: nios2_qsys_0: "nios_system" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=/tmp/alt7129_8938964436305286123.dir/0003_jtag_uart_0_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0003_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
+Info: jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: new_sdram_controller_0: Starting RTL generation for module 'nios_system_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_system_new_sdram_controller_0 --dir=/tmp/alt7129_8938964436305286123.dir/0004_new_sdram_controller_0_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0004_new_sdram_controller_0_gen//nios_system_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'nios_system_new_sdram_controller_0'
+Info: new_sdram_controller_0: "nios_system" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: video_pixel_buffer_dma_0: Starting Generation of VGA Pixel Buffer
+Info: video_pixel_buffer_dma_0: "nios_system" instantiated altera_up_avalon_video_pixel_buffer_dma "video_pixel_buffer_dma_0"
+Info: video_rgb_resampler_0: Starting Generation of Video RGB Resampler
+Info: video_rgb_resampler_0: "nios_system" instantiated altera_up_avalon_video_rgb_resampler "video_rgb_resampler_0"
+Info: video_dual_clock_buffer_0: Starting Generation of the Dual Clock Buffer
+Info: video_dual_clock_buffer_0: "nios_system" instantiated altera_up_avalon_video_dual_clock_buffer "video_dual_clock_buffer_0"
+Info: video_vga_controller_0: Starting Generation of VGA Controller
+Info: video_vga_controller_0: "nios_system" instantiated altera_up_avalon_video_vga_controller "video_vga_controller_0"
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 10 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 5 modules, 10 connections
+Info: generic_tristate_controller_0: "nios_system" instantiated altera_generic_tristate_controller "generic_tristate_controller_0"
+Info: tristate_conduit_bridge_0: "nios_system" instantiated altera_tristate_conduit_bridge "tristate_conduit_bridge_0"
+Info: performance_counter_0: Starting RTL generation for module 'nios_system_performance_counter_0'
+Info: performance_counter_0:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_performance_counter -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_performance_counter/generate_rtl.pl --name=nios_system_performance_counter_0 --dir=/tmp/alt7129_8938964436305286123.dir/0010_performance_counter_0_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0010_performance_counter_0_gen//nios_system_performance_counter_0_component_configuration.pl  --do_build_sim=0  ]
+Info: performance_counter_0: Done RTL generation for module 'nios_system_performance_counter_0'
+Info: performance_counter_0: "nios_system" instantiated altera_avalon_performance_counter "performance_counter_0"
+Info: rleds: Starting RTL generation for module 'nios_system_rleds'
+Info: rleds:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_rleds --dir=/tmp/alt7129_8938964436305286123.dir/0011_rleds_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0011_rleds_gen//nios_system_rleds_component_configuration.pl  --do_build_sim=0  ]
+Info: rleds: Done RTL generation for module 'nios_system_rleds'
+Info: rleds: "nios_system" instantiated altera_avalon_pio "rleds"
+Info: gleds: Starting RTL generation for module 'nios_system_gleds'
+Info: gleds:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_gleds --dir=/tmp/alt7129_8938964436305286123.dir/0012_gleds_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0012_gleds_gen//nios_system_gleds_component_configuration.pl  --do_build_sim=0  ]
+Info: gleds: Done RTL generation for module 'nios_system_gleds'
+Info: gleds: "nios_system" instantiated altera_avalon_pio "gleds"
+Info: switches: Starting RTL generation for module 'nios_system_switches'
+Info: switches:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_switches --dir=/tmp/alt7129_8938964436305286123.dir/0013_switches_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0013_switches_gen//nios_system_switches_component_configuration.pl  --do_build_sim=0  ]
+Info: switches: Done RTL generation for module 'nios_system_switches'
+Info: switches: "nios_system" instantiated altera_avalon_pio "switches"
+Info: timer_0: Starting RTL generation for module 'nios_system_timer_0'
+Info: timer_0:   Generation command is [exec /package/eda/altera/altera13.0sp1/quartus/linux/perl/bin/perl -I /package/eda/altera/altera13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/europa -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin/perl_lib -I /package/eda/altera/altera13.0sp1/quartus/sopc_builder/bin -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /package/eda/altera/altera13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios_system_timer_0 --dir=/tmp/alt7129_8938964436305286123.dir/0014_timer_0_gen/ --quartus_dir=/package/eda/altera/altera13.0sp1/quartus --verilog --config=/tmp/alt7129_8938964436305286123.dir/0014_timer_0_gen//nios_system_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'nios_system_timer_0'
+Info: timer_0: "nios_system" instantiated altera_avalon_timer "timer_0"
+Info: ycc_rgb_convert_0: "nios_system" instantiated ycc_rgb_convert "ycc_rgb_convert_0"
+Info: nios2_qsys_0_custom_instruction_master_translator: "nios_system" instantiated altera_customins_master_translator "nios2_qsys_0_custom_instruction_master_translator"
+Info: nios2_qsys_0_custom_instruction_master_comb_xconnect: "nios_system" instantiated altera_customins_xconnect "nios2_qsys_0_custom_instruction_master_comb_xconnect"
+Info: nios2_qsys_0_custom_instruction_master_comb_slave_translator0: "nios_system" instantiated altera_customins_slave_translator "nios2_qsys_0_custom_instruction_master_comb_slave_translator0"
+Info: nios2_qsys_0_instruction_master_translator: "nios_system" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "nios_system" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "nios_system" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios_system" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios_system" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios_system" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "nios_system" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "nios_system" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "nios_system" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "nios_system" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "nios_system" instantiated altera_merlin_router "id_router_002"
+Info: id_router_004: "nios_system" instantiated altera_merlin_router "id_router_004"
+Info: id_router_005: "nios_system" instantiated altera_merlin_router "id_router_005"
+Info: burst_adapter: "nios_system" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "nios_system" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "nios_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "nios_system" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file /home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_demux_002: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_005: "nios_system" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_005"
+Info: rsp_xbar_mux: "nios_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "nios_system" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file /home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "nios_system" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file /home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/ecegrid/a/695r07/ece695r/project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: tdt: "generic_tristate_controller_0" instantiated altera_tristate_controller_translator "tdt"
+Info: tda: "generic_tristate_controller_0" instantiated altera_tristate_controller_aggregator "tda"
+Info: nios_system: Done nios_system" with 49 modules, 135 files, 2654938 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

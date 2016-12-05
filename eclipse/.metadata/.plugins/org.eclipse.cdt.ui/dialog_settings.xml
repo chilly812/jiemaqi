@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="completion_proposal_size">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="227191" key="searchFlags"/>
+		<item value="false" key="caseSensitive"/>
+		<list key="previousPatterns">
+			<item value="ifast"/>
+			<item value="DESCALE"/>
+			<item value="jpeg_idct_islow"/>
+			<item value="alt_up_pixel_buffer_dma_clear_screen"/>
+			<item value="JSAMPROW"/>
+			<item value="DSTATE_START"/>
+			<item value="jinit_write_ppm"/>
+		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+</section>
